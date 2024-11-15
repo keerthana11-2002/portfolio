@@ -66,7 +66,7 @@
   display: flex;
   gap: 50px;
   margin-top: 30px;
-  z-index: -1;
+  
 }
 
 .links-button button {
@@ -84,7 +84,6 @@
   border: 4px solid rgba(66, 66, 243, 0.804);
   background-color: #111131;
   color: rgba(66, 66, 243, 0.804);
-  cursor: pointer;
 }
 
 .links-button .download:hover {
@@ -96,7 +95,6 @@
 .links-button .connect {
   background-color: rgba(66, 66, 243, 0.804);
   color: rgb(40, 38, 38);
-  cursor: pointer;
 }
 
 .links-button .connect:hover {
@@ -106,16 +104,18 @@
 .links-button button:hover {
   transform: scale(1.05);
 }
-.scroll {
-  margin-top: 40px;
-  cursor: pointer;
+.scroll{
+ 
+    margin-top: 40px;
+    cursor:pointer;
 }
-.slidingcontainer {
-  position: absolute;
-  font-size: 50vh;
-  bottom: -120px;
-  white-space: nowrap;
-  color: #ffffff09;
-  font-size: bold;
-  width: 50%;
+.slidingcontainer{
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color:#ffffff09;
+    font-size: bold;
+ width: 50%;
+
 }

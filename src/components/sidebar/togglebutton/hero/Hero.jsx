@@ -60,10 +60,9 @@ const Hero = () => {
           and functional designs is my forte, ensuring seamless user
           experiences.
         </motion.p>
-        <motion.div className="links-button" variants={variants}  >
-            <a href="/"><motion.button className="download" whileHover={{color:"lightgray"}}>Download CV</motion.button></a>
-           
-          <motion.button className="connect">Let's Connect</motion.button>
+        <motion.div className="links-button" variants={variants}>
+          <button className="download">Download CV</button>
+          <button className="connect">Let's Connect</button>
         </motion.div>
         <motion.img
           className="scroll"
