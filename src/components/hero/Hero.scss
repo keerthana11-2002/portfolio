@@ -65,8 +65,8 @@
 .links-button {
   display: flex;
   gap: 50px;
-  margin-top: 20px;
-  margin-left: 174px;
+  margin-top: 30px;
+  
 }
 
 .links-button button {
@@ -103,4 +103,19 @@
 
 .links-button button:hover {
   transform: scale(1.05);
+}
+.scroll{
+ 
+    margin-top: 40px;
+    cursor:pointer;
+}
+.slidingcontainer{
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color:#ffffff09;
+    font-size: bold;
+ width: 50%;
+
 }
