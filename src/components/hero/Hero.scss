@@ -1,0 +1,106 @@
+.hero {
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  overflow: hidden;
+  position: relative;
+
+  .imagecontainer {
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    right: 120px;
+    border-radius: 50px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+.hero-content {
+  margin-top: 110px;
+  margin-left: 150px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-content .highlight {
+  color: rgba(66, 66, 243, 0.804);
+}
+
+.hero-content .role {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-content .description {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #dcdcdc;
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.links-button {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+  margin-left: 174px;
+}
+
+.links-button button {
+  padding: 20px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.links-button .download {
+  border: 4px solid rgba(66, 66, 243, 0.804);
+  background-color: #111131;
+  color: rgba(66, 66, 243, 0.804);
+}
+
+.links-button .download:hover {
+  background-color: lightgrey;
+  color: rgb(74, 71, 71);
+  border: none;
+}
+
+.links-button .connect {
+  background-color: rgba(66, 66, 243, 0.804);
+  color: rgb(40, 38, 38);
+}
+
+.links-button .connect:hover {
+  background-color: lightgrey;
+}
+
+.links-button button:hover {
+  transform: scale(1.05);
+}
