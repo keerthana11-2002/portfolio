@@ -12,14 +12,14 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <img src="/logo3.png" width={150} />
+          <img src="/logo3.png" width={170} />
         </motion.span>
         <div className="social">
           <a href="https://github.com/keerthana11-2002">
-            <img src="/github1.png" alt=""  />
+            <img src="/logo11.png" alt=""  />
           </a>
           <a href="https://www.linkedin.com/in/keerthana-k-16b6442a0/">
-            <img src="/linkedin1.png" alt=""  />
+            <img src="/logo7.png" alt=""   />
           </a>
         </div>
          

@@ -1,4 +1,5 @@
- import {motion} from "framer-motion"
+
+import { motion } from "framer-motion";
 
 const variants = {
   open: {
@@ -16,23 +17,34 @@ const variants = {
 
 const itemVariants = {
   open: {
-     y:0,
-     opacity:1,
+    y: 0,
+    opacity: 1,
   },
   closed: {
-     y:50,
-     opacity:0,
+    y: 50,
+    opacity: 0,
   },
 };
 
 const Links = () => {
-  const items = ["HomePage", "Skills", "Projects", "Contact"];
+  const items = [
+    { name: "Homepage", link: "#Homepage" },
+    { name: "Skills", link: "#Skills" },
+    { name: "Projects", link: "#Projects" },
+    { name: "Contact", link: "#Contact" },
+  ];
 
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
-        <motion.a href={`/${item}`} key={item} variants={itemVariants} whileHover={{scale:1.1}} whileTap={{scale:0.95}}>
-          {item}
+        <motion.a
+          href={item.link}
+          key={item.name}
+          variants={itemVariants}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          {item.name}
         </motion.a>
       ))}
     </motion.div>

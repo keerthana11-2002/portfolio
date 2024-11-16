@@ -61,7 +61,7 @@ const Hero = () => {
           experiences.
         </motion.p>
         <motion.div className="links-button" variants={variants}  >
-            <a href="/"><motion.button className="download" whileHover={{color:"lightgray"}}>Download CV</motion.button></a>
+            <motion.button className="download" whileHover={{color:"lightgray"}}>Download CV</motion.button>
            
           <motion.button className="connect">Let's Connect</motion.button>
         </motion.div>
