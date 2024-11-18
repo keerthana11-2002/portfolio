@@ -12,11 +12,12 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <img src="/logo3.png" width={170} />
+          <a href="#homepage"> <img src="/logo3.png" width={150} style={{background:"yellow"}}/></a>
+         
         </motion.span>
         <div className="social">
           <a href="https://github.com/keerthana11-2002">
-            <img src="/logo11.png" alt=""  />
+            <img src="/logo12.png" alt=""  />
           </a>
           <a href="https://www.linkedin.com/in/keerthana-k-16b6442a0/">
             <img src="/logo7.png" alt=""   />

@@ -66,6 +66,14 @@ const Contact = () => {
           <h2>Address</h2>
           <span>Krishnagiri,TamilNadu,India</span>
         </motion.div>
+        <motion.div className="social"variants={variants} >
+          <a href="https://github.com/keerthana11-2002">
+            <img src="/logo12.png" alt=""  />
+          </a>
+          <a href="https://www.linkedin.com/in/keerthana-k-16b6442a0/">
+            <img src="/logo7.png" alt=""   />
+          </a>
+        </motion.div>
       </motion.div>
       <div className="formContainer">
         <motion.div

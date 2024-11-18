@@ -1,0 +1,40 @@
+[
+  {
+    "title": "HTML",
+    "image": "html1.png"
+  },
+  {
+    "title": "CSS",
+    "image": "css.png"
+  },
+  {
+    "title": "Javascript",
+    "image": "javascript.png"
+  },
+  {
+    "title": "React",
+    "image": "react.png"
+  },
+  {
+    "title": "Nextjs",
+    "image": "next.png"
+  },
+
+  {
+    "title": "material ui",
+    "image": "materialui.png"
+  },
+  {
+    "title": "Tailwind CSS",
+    "image": "tailwind.png"
+  },
+
+  {
+    "title": "My Sql",
+    "image": "sql.png"
+  },
+  {
+    "title": "git",
+    "image": "git.png"
+  }
+]

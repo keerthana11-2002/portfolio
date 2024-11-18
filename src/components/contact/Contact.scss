@@ -5,25 +5,26 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  padding: 20px;
 
   .textContainer {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 40;
+    gap: 40px;
 
     h1 {
-      font-size: 100px;
-      line-height: 88px;
-      margin-bottom: 20px;
+      font-size: 60px;
+     line-height: 10px;
+      margin-bottom:0px;
+      color:rgba(66, 66, 243, 0.804);
     }
     span {
       font-weight: 300;
-      
     }
-     h2{
-margin-bottom: 5px;
-margin-top: 20px;
+    h2 {
+      margin-bottom: 5px;
+      margin-top: 10px;
     }
   }
 
@@ -31,41 +32,115 @@ margin-top: 20px;
     flex: 1;
     position: relative;
 
-    .phoneSvg{
-        stroke:  rgba(66, 66, 243, 0.804);
-        position: absolute;
-        margin: auto;
-        z-index: -1;
+    .phoneSvg {
+      stroke: rgba(66, 66, 243, 0.804);
+      position: absolute;
+      margin: auto;
+      z-index: -1;
+      width: 300px; // Reduce size for mobile
     }
 
     form {
+      margin-top: 50px;
       display: flex;
       flex-direction: column;
       gap: 20px;
 
-      input,textarea {
+      input,
+      textarea {
         padding: 20px;
         background-color: transparent;
         border: 1px solid white;
         color: white;
         border-radius: 5px;
-        font-size: 18px;
+        font-size: 15px;
+        width: 90%; // Full width for inputs on mobile
       }
 
-      button{
-        padding: 20px;
-        border:3px solid rgba(66, 66, 243, 0.804);
-        background-color:#0c0c1d  ;
-        color:rgba(66, 66, 243, 0.804);
+      button {
+        padding: 15px;
+        border: 3px solid rgba(66, 66, 243, 0.804);
+        background-color: #0c0c1d;
+        color: rgba(66, 66, 243, 0.804);
         cursor: pointer;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
+        width: 90%; // Make button full width
       }
-      button:hover{
-        background-color: gray;
-        color:rgb(18, 18, 93);
+
+      button:hover {
+        background-color: rgba(66, 66, 243, 0.804);
+        color: white;
         border: none;
       }
+    }
+  }
+
+  // Media Query for Mobile Devices
+  @media (max-width: 768px) {
+    flex-direction: column; // Stack items vertically on mobile
+    gap: 30px;
+
+    .textContainer {
+      flex: 1;
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        font-size: 50px; // Smaller font size for mobile
+        line-height: 60px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    .formContainer {
+      flex: 1;
+      width: 100%; // Full width for form on mobile
+    }
+
+    .phoneSvg {
+      width: 250px; // Adjust phone SVG size for mobile
+      position: relative; // Adjust position for smaller screens
+    }
+
+    form {
+      gap: 15px;
+    }
+
+    input,
+    textarea {
+      font-size: 16px; // Smaller font size for inputs on mobile
+    }
+
+    button {
+      font-size: 18px; // Smaller button font size for mobile
+      padding: 15px;
+    }
+  }
+
+  // Media Query for Very Small Screens (e.g., portrait mobile)
+  @media (max-width: 480px) {
+    .textContainer h1 {
+      font-size: 40px; // Further reduce font size
+      line-height: 48px;
+    }
+
+    .textContainer h2 {
+      font-size: 16px; // Smaller text for headings
+    }
+
+    input,
+    textarea {
+      font-size: 14px; // Smaller font size for inputs
+      padding: 15px; // Reduced padding
+    }
+
+    button {
+      font-size: 16px; // Adjust button font size further
+      padding: 12px;
     }
   }
 }

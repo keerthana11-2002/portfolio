@@ -1,58 +1,155 @@
  
-.navbar {
-    height: 100px;
-    background-color: #0c0c1d; /* Dark background for contrast */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+// .navbar {
+//     height: 100px;
+//     background-color: #0c0c1d; 
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+//     position: sticky;
+//     top: 0;
+//     z-index: 1000;
     
-  }
+//   }
   
-  .wrapper {
-    max-width: 1366px;
-    width: 100%;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    margin-left: 50px;/* Equal spacing between elements */
-  }
+//   .wrapper {
+//     max-width: 1366px;
+//     width: 100%;
+//     padding: 0 20px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between; 
+//     margin-left: 50px; 
+//   }
   
-  .wrapper img {
-    font-weight: bold;
-    cursor: pointer;
-  }
+//   .wrapper img {
+//     font-weight: bold;
+//     cursor: pointer;
+//   }
   
-  .social {
-    display: flex;
-    gap: 90px; 
-    margin-left: 50%;/* Uniform spacing between icons */
-  }
+//   .social {
+//     display: flex;
+//     gap: 90px; 
+//     margin-right: 10%; 
+//   }
   
-  .social a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 100px;
-    background-color: #1d1d2e;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
+//   .social a {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 40px;
+//     height: 40px;
+//     border-radius: 100px;
+//     background-color: #1d1d2e;
+//     transition: transform 0.3s ease, background-color 0.3s ease;
+//   }
   
-  .social a:hover {
-    transform: scale(1.1);
-    background-color: #3a3a5c;
-  }
+//   .social a:hover {
+//     transform: scale(1.1);
+//     background-color: #3a3a5c;
+//   }
   
-  .social img {
-    width: 100px;
-    height: 70px;
+//   .social img {
+//     width: 50px;
+//     height: 50px;
      
-  }
+//   }
   
-   
+.navbar {
+  height: 100px;
+  background-color: #0c0c1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.wrapper {
+  max-width: 1366px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+.wrapper img {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  gap: 90px;
+  margin-right: 10%;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #1d1d2e;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social a:hover {
+  transform: scale(1.1);
+  background-color: #3a3a5c;
+}
+
+.social img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;  // Stack items vertically on smaller screens
+    align-items: center;     // Center the content
+    margin-left: 0;          // Remove margin-left on smaller screens
+  }
+
+  .social {
+    gap: 30px;               // Reduced gap between social icons
+    margin-right: 0;         // Remove margin-right for better alignment
+  }
+
+  .social a {
+    width: 35px;             // Reduce icon size for mobile
+    height: 35px;
+  }
+
+  .social img {
+    width: 40px;             // Smaller icon size
+    height: 40px;
+  }
+}
+
+/* Very Small Screens (e.g., portrait mobile devices) */
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 0 10px;         // Adjust padding for very small screens
+  }
+
+  .social {
+    gap: 20px;               // Reduce gap further for small screens
+  }
+
+  .social a {
+    width: 30px;             // Smaller icon size
+    height: 30px;
+  }
+
+  .social img {
+    width: 35px;             // Further reduce image size
+    height: 35px;
+  }
+}
